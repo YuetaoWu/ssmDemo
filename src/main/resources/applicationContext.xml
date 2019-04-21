@@ -3,7 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    <bean id = "man" class="com.billoier.alibaba.demo2.Man" init-method="setUp" destroy-method="exitMethod">
+        <property name="name" value="billoier"/>
+    </bean>-->
 
-    <bean id = "userService" class="com.billoier.alibaba.demo1.UserServiceImpl"></bean>
+    <bean class="com.billoier.alibaba.demo2.MyBeanPostProcessor">
+    </bean>
+    <bean id="userDao" class="com.billoier.alibaba.demo2.UserDaoImpl">
 
+    </bean>
 </beans>

@@ -20,6 +20,7 @@ public class SpringDemo1 {
         UserService service = (UserService)context.getBean("userService");
 
         service.sayHello();
+        System.out.println("Hello World");
     }
 
 }
