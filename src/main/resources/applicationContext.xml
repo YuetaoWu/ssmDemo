@@ -7,9 +7,21 @@
         <property name="name" value="billoier"/>
     </bean>-->
 
-    <bean class="com.billoier.alibaba.demo2.MyBeanPostProcessor">
-    </bean>
-    <bean id="userDao" class="com.billoier.alibaba.demo2.UserDaoImpl">
+    <!--<bean class="com.billoier.alibaba.demo2.MyBeanPostProcessor">-->
+    <!--</bean>-->
+    <!--<bean id="userDao" class="com.billoier.alibaba.demo2.UserDaoImpl">-->
 
+    <!--</bean>-->
+
+    <bean id="user" class="com.billoier.alibaba.demo3.User">
+        <property name="name" value="billoier"/>
+        <property name="age"  value="25"/>
+        <property name="myCat" ref="cat"/>
     </bean>
+
+
+    <bean id="cat" class="com.billoier.alibaba.demo3.Cat">
+        <property name="name" value="Chelase"/>
+    </bean>
+
 </beans>
